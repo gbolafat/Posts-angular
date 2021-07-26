@@ -1,0 +1,14 @@
+<p>favorite works!</p>
+
+<img (click)="onClick()" [src]="isSelected ? imgurl: imgurl2" alt="">
+
+<br />
+  <span
+  class="glyphicon"
+  [class.glyphicon-star]="isSelected"
+  [class.glyphicon-star-empty]="!isSelected"
+  (click)="onClick()"
+  ></span>
+
+  <span
+  class="glyphicon glyphicon-user"></span>
